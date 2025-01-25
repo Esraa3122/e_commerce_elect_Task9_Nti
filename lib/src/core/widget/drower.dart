@@ -1,5 +1,5 @@
 import 'package:e_commerce_elect/src/core/style/color_app.dart';
-import 'package:e_commerce_elect/src/core/style/size_app.dart';
+import 'package:e_commerce_elect/src/core/style/text_style.dart';
 import 'package:e_commerce_elect/src/feature/home/view/refactors/home_body.dart';
 import 'package:flutter/material.dart';
 
@@ -26,14 +26,16 @@ class DrawerHome extends StatelessWidget {
               children: [
                IconButton(
                 icon: Icon(Icons.arrow_back_ios_new),
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.pop(context);
+                },
                 iconSize: 25,
                 color: Colors.white,
                 ),
                 const SizedBox(width: 50),
-                const Text("Categroys",
-                    style:
-                        TextStyle(fontSize: SizeApp.s25, color: Colors.white))
+                 Text("Categroys",
+                    style: drowerHomeStyle()
+                  ),
               ],
             ),
           ),

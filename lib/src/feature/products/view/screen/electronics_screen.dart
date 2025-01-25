@@ -1,6 +1,5 @@
 import 'package:e_commerce_elect/src/core/style/color_app.dart';
 import 'package:e_commerce_elect/src/core/widget/app_bar.dart';
-import 'package:e_commerce_elect/src/core/widget/button_nan_bar.dart';
 import 'package:e_commerce_elect/src/core/widget/drower.dart';
 import 'package:e_commerce_elect/src/feature/home/cubit/home_cubit.dart';
 import 'package:e_commerce_elect/src/feature/home/cubit/home_state.dart';
@@ -31,7 +30,7 @@ class ElectronicsScreen extends StatelessWidget {
         appBar: appBarHome(
             title: title,
             ),
-        bottomNavigationBar: ButtonNanBar(),
+        // bottomNavigationBar: ButtonNanBar(),
         body: BlocBuilder<ElectronicsCubit, ElectronicsState>(
           builder: (context, state) {
             if (state is ElectronicsSuccess) {

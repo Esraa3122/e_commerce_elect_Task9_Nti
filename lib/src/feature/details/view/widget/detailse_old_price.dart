@@ -11,7 +11,7 @@ class DetailseOldPrice extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(
       children: [
-        Text("${oldPrice} ر.س",
+        Text("$oldPrice ر.س",
             style: TextStyle(
                 color: ColorsApp.kTextLightColor,
                 fontSize: SizeApp.s15,

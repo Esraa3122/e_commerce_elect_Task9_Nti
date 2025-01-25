@@ -11,10 +11,10 @@ class DetailsPrice extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(
       children: [
-        Text("Price: ${price}\$",
+        Text("Price: $price\$",
             style: TextStyle(color: Colors.red, fontSize: SizeApp.s20)),
         Spacer(),
-        Text("${rate}⭐", style: TextStyle( fontSize: SizeApp.s20))
+        Text("$rate⭐", style: TextStyle( fontSize: SizeApp.s20))
       ],
     );
   }

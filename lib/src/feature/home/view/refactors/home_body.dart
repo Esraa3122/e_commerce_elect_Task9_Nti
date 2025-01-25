@@ -1,5 +1,6 @@
 import 'package:e_commerce_elect/src/core/style/img_app.dart';
 import 'package:e_commerce_elect/src/feature/home/view/widget/custom_button.dart';
+import 'package:e_commerce_elect/src/feature/laps/view/screen/home_lab_cat.dart';
 import 'package:e_commerce_elect/src/feature/products/view/screen/electronics_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -63,6 +64,17 @@ class HomeBody extends StatelessWidget {
             },
             title: "WOMEN'S CLOTHING",
             image: ImageApp.category4),
+           const SizedBox(height: 30),
+        CustomButton(
+            onTap: () {
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => HomeLabCat()));
+            },
+            title: "LAPTOPS",
+            image: ImageApp.category1),
+        
       ],
     ));
   }
